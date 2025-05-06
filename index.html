@@ -1,47 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WestLand</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #2ecc71;
+    }
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #2ecc71;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/mnt/data/file-8fcaPxiM4uqkvPjxLHXhmd') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 48px;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #181818;
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #2ecc71;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background-color: #2ecc71;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #27ae60;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1 class="logo">WestLand</h1>
+    <h1>WestLand</h1>
     <nav>
       <a href="#services">Services</a>
       <a href="#store">Store</a>
       <a href="#downloads">Downloads</a>
       <a href="#login">Login</a>
     </nav>
-  </header>
-  <div class="hero">
+  </header>  <div class="hero">
     <h1>WestLand SAMP</h1>
-  </div>
-  <section class="section" id="services">
+  </div>  <section class="section" id="services">
     <h2>Services</h2>
     <p>Access vehicle keys, house keys, and live GPS for your in-game assets.</p>
     <a class="btn" href="#">Access Services</a>
-  </section>
-  <section class="section" id="store">
+  </section>  <section class="section" id="store">
     <h2>Game Store</h2>
     <p>Purchase coins and exclusive items to enhance your game experience.</p>
     <a class="btn" href="#">Visit Store</a>
-  </section>
-  <section class="section" id="downloads">
+  </section>  <section class="section" id="downloads">
     <h2>Downloads</h2>
     <p>Download GTA San Andreas, TeamSpeak 3, and other necessary tools in one place.</p>
     <a class="btn" href="#">Download Now</a>
-  </section>
-  <section class="section" id="login">
+  </section>  <section class="section" id="login">
     <h2>Login</h2>
     <p>Securely log in to your account to access all the services and manage purchases.</p>
     <a class="btn" href="#">Login Now</a>
-  </section>
-  <footer>
+  </section>  <footer>
     &copy; 2025 WestLand Team | All rights reserved
   </footer>
 </body>
